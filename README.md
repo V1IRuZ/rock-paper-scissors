@@ -10,3 +10,10 @@ Computerchoice function
 Humanchoice function
 1. Ask a user give a value
 2. return the value in lowercase
+
+Declare scores
+1. Add variables humanScore and computerScore to global scope
+
+Play a round
+1. Add if statements to check all possible outcomes
+2. Add a message if you win or lose
