@@ -6,3 +6,7 @@ Computerchoice function
 3. Set the game item to match a randomly selected number
 4. Return the chosen value from the if statement
 5. Test function returns random value
+
+Humanchoice function
+1. Ask a user give a value
+2. return the value in lowercase
