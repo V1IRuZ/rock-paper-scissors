@@ -17,3 +17,9 @@ Declare scores
 Play a round
 1. Add if statements to check all possible outcomes
 2. Add a message if you win or lose
+
+Play a game
+1. call computerchoice
+2. call human choice
+3. call gameround
+4. Loop calls 5 times.
