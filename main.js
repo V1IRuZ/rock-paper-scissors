@@ -11,7 +11,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     while (true) {
-        const answer = prompt("Choose rock papers or scissors").toLowerCase();
+        const answer = prompt("Choose rock paper or scissors").toLowerCase();
         if (answer === 'rock' || answer === 'paper' || answer === 'scissors') {
             return answer;
         } else {
@@ -50,19 +50,23 @@ function playGame() {
                 console.log("You lose! Rock beats Scissors!")
                 computerScore++;
             } else {
-                console.log(`It's a draw! Both pick ${humanChoice}`)
+                console.log(`It's a draw! Both chose ${humanChoice}`)
             }
         }
         playRound(humanSelection, computerSelection);
-        console.log( `Your score ${humanScore}, Opponent score ${computerScore}`);
+        console.log( `Your score: ${humanScore}, opponent's score: ${computerScore}`);
     }
 
-    if (humanScore > computerScore) {
-        console.log(`You won! Final score ${humanScore} - ${computerScore}!`);
-    } else if (humanScore < computerScore) {
-        console.log(`You lose! Final score ${humanScore} - ${computerScore}!`);
-    } else {
-        console.log(`It's a tie! Final score ${humanScore} - ${computerScore}!`);
+    finalScore();
+
+    function finalScore() {
+        if (humanScore > computerScore) {
+            console.log(`You won! Final score ${humanScore} - ${computerScore}!`);
+        } else if (humanScore < computerScore) {
+            console.log(`You lose! Final score ${humanScore} - ${computerScore}!`);
+        } else {
+            console.log(`It's a tie! Final score ${humanScore} - ${computerScore}!`);
+        }
     }
 }
    
