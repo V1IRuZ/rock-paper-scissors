@@ -1,7 +1,11 @@
 # rock-paper-scissors
+The goal of this project was to create a rock paper scissors game without website graphic design. The most important thing was practicing javascript and planning the project with pseudocode.
 
+Self-evaluation: At first, I stayed very focused on the project planning and the coding went without any major problems. Instead, in the last step, where the game function itself was created, I started having some problems and forgot to use pseudocode. However, I managed to solve the problems, although I could have saved time by planning. There is still a lot to improve in the pseudocode and javascript code, but for the first project it went quite well.
+
+Pseudocode
 Computerchoice function
-1. Create a function named setComputerchoice()
+1. Create a function named getComputerchoice()
 2. Randomly pick number 0, 1 or 2
 3. Set the game item to match a randomly selected number
 4. Return the chosen value from the if statement
@@ -19,7 +23,7 @@ Play a round
 2. Add a message if you win or lose
 
 Play a game
-1. call computerchoice
-2. call human choice
-3. call gameround
+1. Call computerChoice function
+2. Call humanChoice function
+3. Call playRound function
 4. Loop calls 5 times.
