@@ -8,21 +8,23 @@ function getComputerChoice() {
         return 'scissors';
     }
 }
+const rock = document.querySelector("#rock");
+    rock.addEventListener("click", () => {
+        alert("rock");
+    })
+const paper = document.querySelector("#paper")
+    paper.addEventListener("click", () => {
+        alert("paper");
+    })
+
+const scissors = document.querySelector("#scissors")
+    scissors.addEventListener("click", () => {
+        alert("scissors");
+    })
+
 
 function getHumanChoice() {
-    while (true) {
-        let answer = prompt("Choose rock paper or scissors");
-        if (answer != null) {
-            answer = answer.toLowerCase();
-            if (answer === 'rock' || answer === 'paper' || answer === 'scissors') {
-                return answer;
-            } else {
-                alert("Wrong value, please pick rock paper or scissors.");
-            }
-        } else {
-            alert("Choose rock paper or scissors. The game lasts five rounds.")
-        }
-    }
+
 }
 
 function playGame() {
@@ -30,7 +32,7 @@ function playGame() {
     let humanScore = 0;
     let computerScore = 0; 
 
-    for (let i = 1; i <= 5; i++) {  
+    
 
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
@@ -62,18 +64,6 @@ function playGame() {
         alert( `Your score: ${humanScore}, opponent's score: ${computerScore}`);
     }
 
-    finalScore();
-
-    function finalScore() {
-        if (humanScore > computerScore) {
-            alert(`You won! Final score ${humanScore} - ${computerScore}!`);
-        } else if (humanScore < computerScore) {
-            alert(`You lose! Final score ${humanScore} - ${computerScore}!`);
-        } else {
-            alert(`It's a tie! Final score ${humanScore} - ${computerScore}!`);
-        }
-    }
-}
    
 playGame();
 
