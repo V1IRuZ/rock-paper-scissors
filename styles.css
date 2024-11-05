@@ -11,7 +11,7 @@ body {
     justify-content: center;
     gap: 30px;
     align-items: center;
-    background-color: orange;
+    background-color:coral;
     max-width: 1440px;
 }
 
@@ -54,4 +54,9 @@ button:hover {
     display: flex;
     gap: 20px;
     padding: 20px;
+}
+
+img {
+    height: 200px;
+    width: auto;
 }
