@@ -11,14 +11,14 @@ body {
     justify-content: center;
     gap: 30px;
     align-items: center;
-    background-color:coral;
+    background-color:rgba(0, 0, 0, 0.835);
     max-width: 1440px;
 }
 
 button {
     width: 300px;
     background-color: black;
-    color: greenyellow;
+    color: white;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -27,14 +27,14 @@ button {
 }
 
 button:hover {
-    background-color: greenyellow;
+    background-color: rgba(255, 217, 0, 0.817);
     color: black;  
 }
 
 .container {
-    border: 5px solid black;
+    border: 5px solid white;
     border-radius: 10px;
-    background-color: greenyellow;
+    background-color: rgb(169, 24, 21);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -46,6 +46,7 @@ button:hover {
 
 #header {
     border: 5px solid black;
+    color: white;
     border-radius: 10px;
     padding: 20px;
 }
@@ -59,4 +60,8 @@ button:hover {
 img {
     height: 200px;
     width: auto;
+}
+
+p {
+    font-size: 32px;
 }
