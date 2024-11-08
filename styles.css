@@ -32,7 +32,13 @@ body {
 }
 
 h1 {
-    font-size: 32px;
+    color: rgba(255, 217, 0, 0.817);
+    font-size: 36px;
+}
+
+img {
+    height: 350px;
+    margin: 20px;
 }
 
 #game {
@@ -57,7 +63,4 @@ button:hover {
     color: black;  
 }
 
-img {
-    height: 200px;
-}
 

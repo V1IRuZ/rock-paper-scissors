@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll("button");
 
 const content = document.createElement("div");
 content.classList.add("content");
-content.style.cssText="font-size: 32px; font-weight: 900; color: white;"
+content.style.cssText="font-size: 32px; font-weight: 900; color: white; padding: 10px;"
 
 let humanScore = 0;
 let computerScore = 0;
